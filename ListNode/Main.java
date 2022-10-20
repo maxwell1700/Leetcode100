@@ -1,31 +1,13 @@
-package MergedLinkedList;
-
-import java.util.ArrayDeque;
-import java.util.Queue;
+package ListNode;
 
 public class Main {
     public static void main(String[] args) {
-        ListNode list1 = new ListNode(1,  new ListNode(2,new ListNode(4)));
-        ListNode list2 = new ListNode(1,new ListNode(3,new ListNode(4)));
 
-        ListNode newhead = new ListNode();
-
-        ListNode tail = new ListNode();
-
-        tail = newhead;
-        ListNode bob = new ListNode(10);
-
-        tail.next = bob;
-
-        System.out.println(newhead.next);
 
     }
 
     static ListNode mergedList(ListNode list1, ListNode list2){
-       // 1 -- 2 -- 4
-        //1 -- 3 --4
 
-        // create the first node of new merged linked list to start
 
         ListNode head = new ListNode();
         ListNode temp = head;

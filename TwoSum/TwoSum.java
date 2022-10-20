@@ -6,8 +6,8 @@ public class TwoSum {
 
     public static void main(String[] args) {
 
-        int [] input = {-1,-2,-3,-5,-10};
-        System.out.println(Arrays.toString(optTwoSum(-8,input)));
+        int [] input = {1,3,5,4,6};
+        System.out.println(Arrays.toString(optTwoSum(6,input)));
     }
 
     static int[] twoSum(int[] nums, int target) {

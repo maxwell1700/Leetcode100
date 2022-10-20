@@ -10,22 +10,21 @@ public class main {
     }
 
     static Boolean validParenthesis(String str){
-        Stack<Character> stack = new Stack<>();
-        for (int i = 0; i < str.length() ; i++) {
-           char parenthesis =  str.charAt(i);
 
-           if(parenthesis == '{'){
+        Stack<Character> stack = new Stack<>();
+        for (char c : str.toCharArray()) {
+            if(c == '{'){
                stack.push('}');
 
-           }else if(parenthesis == '['){
+           }else if(c == '['){
 
                stack.push(']');
 
-           } else if(parenthesis == '('){
+           } else if(c == '('){
 
             stack.push(')');
 
-        }else if(stack.isEmpty()|| stack.pop()!= parenthesis){
+        }else if(stack.isEmpty()|| stack.pop()!= c){
                return false;
            }
 
